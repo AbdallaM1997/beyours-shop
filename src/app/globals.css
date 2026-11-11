@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* BeYours brand tokens (see CLAUDE.md) */
+@theme {
+  --color-brand-blue: #2403b8;
+  --color-brand-blue-light: #3417c9;
+  --color-brand-pink: #f60883;
+  --color-brand-yellow: #ffbf03;
+  --color-brand-lime: #98f800;
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+  --color-mist: #f3f1fa;
+  --color-muted: #5b5770;
+  --color-line: #dcd8ea;
+
+  --font-display: "Fredoka", "Baloo Bhaijaan 2", system-ui, sans-serif;
+  --font-body: "Nunito", "Cairo", system-ui, sans-serif;
+
+  --shadow-sticker: 4px 4px 0 #000;
+  --shadow-sticker-lg: 6px 6px 0 #000;
+}
+
+/* Arabic pages swap the font order so Arabic glyphs use the Arabic faces first */
+html[lang="ar"] {
+  --font-display: "Baloo Bhaijaan 2", "Fredoka", system-ui, sans-serif;
+  --font-body: "Cairo", "Nunito", system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Sunburst background used by the hero */
+.bg-sunburst {
+  background-color: var(--color-brand-blue);
+  background-image: repeating-conic-gradient(
+    from 0deg at 50% 55%,
+    var(--color-brand-blue) 0deg 12.857deg,
+    var(--color-brand-blue-light) 12.857deg 25.714deg
+  );
+}

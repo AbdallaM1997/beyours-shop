@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "BeYours — Be Different",
+    "description": "Bold tees for kids aged 2–14. Shop the drop or design your own with our AI studio."
+  },
+  "nav": {
+    "shop": "Shop",
+    "boys": "Boys",
+    "girls": "Girls",
+    "baby": "Baby (2–4)",
+    "studio": "Design Studio",
+    "account": "Account",
+    "cart": "Cart",
+    "switchLocale": "عربي"
+  },
+  "home": {
+    "tag": "BE DIFFERENT",
+    "title": "Wear your own idea.",
+    "subtitle": "Bold tees for kids aged 2–14. Pick one you love, or design your own with our AI studio in two minutes.",
+    "shopCta": "Shop the drop",
+    "studioCta": "Design your tee",
+    "promptBubble": "“a dinosaur playing football”",
+    "categories": {
+      "boys": "Boys",
+      "girls": "Girls",
+      "baby": "Baby & toddler",
+      "custom": "Make your own",
+      "ages414": "Ages 4–14",
+      "ages24": "Ages 2–4",
+      "studio": "AI Design Studio"
+    },
+    "newDrop": "New drop",
+    "viewAll": "View all products",
+    "howTitle": "Your kid’s idea → a real tee",
+    "steps": {
+      "s1Title": "Upload or imagine",
+      "s1Body": "Add a photo, or type an idea like “astronaut cat”.",
+      "s2Title": "AI draws it",
+      "s2Body": "Our AI turns it into a bold sticker-style print. Tweak it until it’s perfect.",
+      "s3Title": "We print & deliver",
+      "s3Body": "We check every design, print it, and ship it to your door. Cash on delivery available."
+    },
+    "startDesigning": "Start designing"
+  },
+  "product": {
+    "new": "NEW",
+    "addToCart": "Add to cart"
+  },
+  "studio": {
+    "title": "Design Studio",
+    "subtitle": "Create a print for your tee",
+    "comingSoon": "The studio is being built in milestone M4."
+  },
+  "footer": {
+    "tagline": "Be Different. Made in Egypt for kids 2–14.",
+    "shop": "Shop",
+    "help": "Help",
+    "payWith": "Pay with",
+    "sizeGuide": "Size guide",
+    "shipping": "Shipping & returns",
+    "faq": "FAQ",
+    "whatsapp": "Contact on WhatsApp",
+    "cod": "Cash on delivery",
+    "cards": "Visa / Mastercard",
+    "wallets": "Mobile wallets"
+  }
+}
