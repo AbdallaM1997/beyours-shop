@@ -11,7 +11,9 @@ Bilingual (Arabic / English) online store for **BeYours** — bold kids' tees (a
 | Next.js 15 (App Router) + TypeScript + Tailwind CSS v4 | ✅ set up |
 | Arabic (default, RTL) / English with `next-intl` | ✅ `/ar`, `/en`, language switch |
 | Brand tokens, fonts (Fredoka, Nunito, Cairo, Baloo Bhaijaan 2), logo and stickers | ✅ `src/app/globals.css`, `public/brand/` |
-| Home page (hero, categories, new drop, how it works, footer) | ✅ with sample products |
+| Home page (hero, categories, new drop, how it works, footer) | ✅ products from Supabase (sample data if no keys) |
+| Component gallery at `/ar/dev/ui` / `/en/dev/ui` | ✅ dev only |
+| Supabase session refresh in middleware | ✅ `src/middleware.ts` |
 | UI: Button, Badge, ProductCard, TeeShape, Nav, Footer | ✅ `src/components` |
 | Supabase clients + schema with RLS + seed (products, variants, Egypt shipping zones) | ✅ `supabase/` |
 | AI route `POST /api/ai/generate` with prompt guard (brands, characters, unsafe words, daily limit) | ✅ server-only |

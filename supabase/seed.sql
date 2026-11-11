@@ -1,9 +1,9 @@
 -- Sample data for local development.
-insert into public.products (slug, name_ar, name_en, category, base_price) values
-  ('thunder-kid-tee', 'تيشيرت ثاندر كيد', 'Thunder Kid Tee', 'boys', 45000),
-  ('big-mouth-tee', 'تيشيرت بيج ماوث', 'Big Mouth Tee', 'unisex', 48000),
-  ('peace-out-tee', 'تيشيرت بيس أوت', 'Peace Out Tee', 'girls', 42000),
-  ('electric-blue-tee', 'تيشيرت إلكتريك بلو', 'Electric Blue Tee', 'boys', 49000);
+insert into public.products (slug, name_ar, name_en, category, base_price, display_color) values
+  ('thunder-kid-tee', 'تيشيرت ثاندر كيد', 'Thunder Kid Tee', 'boys', 45000, 'white'),
+  ('big-mouth-tee', 'تيشيرت بيج ماوث', 'Big Mouth Tee', 'unisex', 48000, 'yellow'),
+  ('peace-out-tee', 'تيشيرت بيس أوت', 'Peace Out Tee', 'girls', 42000, 'pink'),
+  ('electric-blue-tee', 'تيشيرت إلكتريك بلو', 'Electric Blue Tee', 'boys', 49000, 'blue');
 
 insert into public.product_variants (product_id, age_size, color, stock, sku)
 select p.id, s.size, c.color, 20, upper(p.slug) || '-' || s.size || '-' || c.color
