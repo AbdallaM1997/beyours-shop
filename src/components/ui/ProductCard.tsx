@@ -3,14 +3,14 @@ import { Link } from "@/i18n/navigation";
 import { Badge } from "./Badge";
 import { TeeShape } from "./TeeShape";
 
-const swatches = ["#ffffff", "#2403b8", "#f60883", "#ffbf03"];
-
 export function ProductCard(props: {
   href: string;
   name: string;
   details: string;
   price: string;
   color: string;
+  /** Swatch colours (CSS values) for the available colours. */
+  swatches?: string[];
   badge?: string;
 }) {
   return (
@@ -28,7 +28,7 @@ export function ProductCard(props: {
       <div className="flex items-center justify-between">
         <span className="font-display text-2xl font-bold text-brand-pink">{props.price}</span>
         <span className="flex gap-1.5" aria-hidden="true">
-          {swatches.map((c) => (
+          {(props.swatches ?? []).map((c) => (
             <span key={c} className="size-5 rounded-full border-2 border-ink" style={{ background: c }} />
           ))}
         </span>

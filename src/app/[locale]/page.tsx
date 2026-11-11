@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/ui/ProductCard";
 import { TeeShape } from "@/components/ui/TeeShape";
 import { formatPrice } from "@/lib/price";
 import { getNewDrop } from "@/server/products";
-import type { CatalogProduct } from "@/lib/products";
+import { colorToken, type CatalogProduct } from "@/lib/products";
 import type { Locale } from "@/i18n/routing";
 
 // Re-fetch the catalog at most every 5 minutes (ISR).
@@ -88,6 +88,7 @@ function Home({ products }: { products: CatalogProduct[] }) {
               details={p.details[locale]}
               price={formatPrice(p.price, locale)}
               color={p.color}
+              swatches={p.colors.map(colorToken)}
               badge={p.isNew ? tp("new") : undefined}
             />
           ))}

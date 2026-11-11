@@ -20,7 +20,8 @@ Bilingual (Arabic / English) online store for **BeYours** — bold kids' tees (a
 | Price helpers in piasters + unit tests | ✅ `tests/` |
 | Admin shell at `/admin` | 🟡 placeholder |
 | Design Studio at `/studio` | 🟡 placeholder (M4) |
-| Shop, product, cart, checkout, Paymob | ⏳ M2–M3 |
+| Shop, product page, cart, size guide, shipping & returns, FAQ | ✅ M2 |
+| Checkout, Paymob, accounts | ⏳ M3 |
 
 The full plan, milestones and step-by-step Claude Code prompts are in the **BeYours E-commerce Site — Plan & Milestones** doc. Designs: [Figma draft](https://www.figma.com/design/hiq26vcRt1E2uWXXo1z3um).
 

@@ -105,7 +105,7 @@ export default async function DevUiPage({ params }: { params: Promise<{ locale: 
 
       <Section title="ProductCard">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <ProductCard href="/product/thunder-kid-tee" name="Thunder Kid Tee" details="Ages 4–8 · 100% cotton" price={formatPrice(45000, locale)} color="var(--color-paper)" badge="NEW" />
+          <ProductCard href="/product/thunder-kid-tee" name="Thunder Kid Tee" details="Ages 4–8 · 100% cotton" price={formatPrice(45000, locale)} color="var(--color-paper)" swatches={["var(--color-paper)", "var(--color-brand-blue-light)", "var(--color-brand-pink)"]} badge="NEW" />
           <ProductCard href="/product/peace-out-tee" name="تيشيرت بيس أوت" details="٢–٦ سنين · قطن عضوي" price={formatPrice(42050, locale)} color="var(--color-brand-pink)" />
         </div>
       </Section>

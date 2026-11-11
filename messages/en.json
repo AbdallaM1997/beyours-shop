@@ -44,7 +44,29 @@
   },
   "product": {
     "new": "NEW",
-    "addToCart": "Add to cart"
+    "addToCart": "Add to cart",
+    "added": "Added to cart ✓",
+    "color": "Colour",
+    "size": "Age size",
+    "qty": "Quantity",
+    "sizeGuide": "Size guide",
+    "outOfStock": "Out of stock",
+    "chooseSize": "Choose a size",
+    "decrease": "Decrease quantity",
+    "increase": "Increase quantity",
+    "viewCart": "View cart",
+    "designTitle": "Want your own idea on it?",
+    "designBody": "Make a one-of-a-kind print in the AI Design Studio.",
+    "designCta": "Open the studio",
+    "codNote": "Cash on delivery available · Delivery in 2–4 days",
+    "colors": {
+      "white": "White",
+      "blue": "Blue",
+      "pink": "Pink",
+      "yellow": "Yellow",
+      "lime": "Lime",
+      "black": "Black"
+    }
   },
   "studio": {
     "title": "Design Studio",
@@ -63,5 +85,64 @@
     "cod": "Cash on delivery",
     "cards": "Visa / Mastercard",
     "wallets": "Mobile wallets"
+  },
+  "shop": {
+    "title": "Shop",
+    "subtitle": "Bold tees for kids aged 2–14.",
+    "all": "All",
+    "count": "{count, plural, =0 {No tees} one {# tee} other {# tees}}",
+    "empty": "Nothing here yet — new tees are on the way.",
+    "emptyCta": "Design your own instead"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "emptyCta": "Shop the drop",
+    "size": "Size",
+    "color": "Colour",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shippingNote": "Shipping is calculated at checkout by governorate.",
+    "checkout": "Checkout",
+    "checkoutSoon": "Checkout is coming soon.",
+    "continue": "Continue shopping"
+  },
+  "sizeGuide": {
+    "title": "Size guide",
+    "intro": "Measure a tee that fits your kid well, laid flat, and compare. Between two sizes? Pick the bigger one.",
+    "age": "Age",
+    "height": "Kid’s height (cm)",
+    "chest": "Chest, flat (cm)",
+    "length": "Length (cm)"
+  },
+  "shipping": {
+    "title": "Shipping & returns",
+    "intro": "We deliver to every governorate in Egypt. Pay by card, mobile wallet, or cash on delivery.",
+    "governorate": "Governorate",
+    "fee": "Fee",
+    "days": "Delivery",
+    "daysValue": "{days} days",
+    "noZones": "Shipping fees are shown at checkout.",
+    "customTitle": "Custom designs",
+    "customBody": "Every custom design is checked by our team before printing, so custom orders take 1–2 extra days.",
+    "returnsTitle": "Returns",
+    "returnsBody": "Ready-made tees can be returned within 14 days if unworn and unwashed. Custom designs are printed just for you, so they can only be returned if they arrive damaged or misprinted."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": {
+      "q1": "How does the AI Design Studio work?",
+      "a1": "Type an idea or upload a photo, and our AI turns it into a bold sticker-style print. Move it, resize it, and add it to your cart.",
+      "q2": "Can I pay cash on delivery?",
+      "a2": "Yes. You can pay cash on delivery anywhere in Egypt, or pay online by card or mobile wallet.",
+      "q3": "How long does delivery take?",
+      "a3": "Usually 2–4 days for ready-made tees. Custom designs take 1–2 extra days because we check and print each one.",
+      "q4": "Which size should I pick?",
+      "a4": "Check the size guide. If your kid is between two sizes, pick the bigger one.",
+      "q5": "Is my kid’s photo safe?",
+      "a5": "Uploaded photos are private, used only to make your design, and deleted after 30 days if no order uses them.",
+      "q6": "Can I put a cartoon character or a brand logo on a tee?",
+      "a6": "No — we can only print original designs, so the studio blocks known characters, brands and logos."
+    }
   }
 }
