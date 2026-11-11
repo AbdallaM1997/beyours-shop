@@ -1,22 +1,26 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
 import { Link } from "@/i18n/navigation";
 import { ButtonLink } from "@/components/ui/Button";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { TeeShape } from "@/components/ui/TeeShape";
 import { formatPrice } from "@/lib/price";
-import { sampleProducts } from "@/lib/sample-products";
+import { getNewDrop } from "@/server/products";
+import type { CatalogProduct } from "@/lib/products";
 import type { Locale } from "@/i18n/routing";
 
-export default function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
-  const { locale } = use(params);
+// Re-fetch the catalog at most every 5 minutes (ISR).
+export const revalidate = 300;
+
+export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  return <Home />;
+  const products = await getNewDrop();
+  return <Home products={products} />;
 }
 
-function Home() {
+function Home({ products }: { products: CatalogProduct[] }) {
   const t = useTranslations("home");
   const tp = useTranslations("product");
   const locale = useLocale() as Locale;
@@ -76,7 +80,7 @@ function Home() {
           <Link href="/shop" className="font-extrabold text-brand-pink">{t("viewAll")} →</Link>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {sampleProducts.map((p) => (
+          {products.map((p) => (
             <ProductCard
               key={p.slug}
               href={`/product/${p.slug}`}
