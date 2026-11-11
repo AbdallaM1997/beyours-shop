@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CartCount } from "@/components/cart/CartCount";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function Nav() {
@@ -26,7 +27,7 @@ export function Nav() {
           <LocaleSwitcher />
           <Link href="/account" className="hidden font-bold text-paper sm:inline">{t("account")}</Link>
           <Link href="/cart" className="rounded-full border-2 border-ink bg-brand-yellow px-4 py-2 font-display font-semibold shadow-[3px_3px_0_#000]">
-            {t("cart")} · 0
+            {t("cart")} · <CartCount />
           </Link>
         </div>
       </nav>

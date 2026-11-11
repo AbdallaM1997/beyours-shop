@@ -50,7 +50,7 @@ new → design_check (custom only) → printing → ready → shipped → delive
 ## Progress
 - [x] M1 starter: Next.js, tokens, fonts, i18n (ar/en, RTL), Nav/Footer, Home page with sample products, Supabase schema + RLS + seed, AI guard + /api/ai/generate, price helpers + tests, CI
 - [x] M1 remaining: /dev/ui component page (dev only), Home "New drop" reads Supabase products (`src/server/products.ts`, falls back to sample data without keys), Supabase session refresh in `src/middleware.ts`, `products.display_color` (migration 0002)
-- [ ] M2 Storefront: home, shop, product, cart, info pages
+- [x] M2 Storefront: shop (`?c=boys|girls|baby`, unisex shows in boys + girls), product page (colour/size/qty → variant), cart in localStorage (`src/components/cart/cart-store.ts`, display prices only — server must recalculate at checkout), size guide, shipping & returns (fees from `shipping_zones`), FAQ. Open: real size-chart numbers (`src/lib/size-guide.ts`), returns policy wording, WhatsApp number, match Figma frame 02
 - [ ] M3 Checkout, Paymob + COD, accounts, admin Orders + Products
 - [ ] M4 Design Studio: editor, Nano Banana generate/edit, print export, 3D preview
 - [ ] M5 Admin: overview, custom designs queue, customers, settings

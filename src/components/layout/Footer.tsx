@@ -1,13 +1,32 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+type Item = { label: string; href?: string };
 
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
-  const cols = [
-    { title: t("shop"), items: [nav("boys"), nav("girls"), nav("baby")] },
-    { title: t("help"), items: [t("sizeGuide"), t("shipping"), t("faq"), t("whatsapp")] },
-    { title: t("payWith"), items: [t("cod"), t("cards"), t("wallets")] },
+  const cols: { title: string; items: Item[] }[] = [
+    {
+      title: t("shop"),
+      items: [
+        { label: nav("boys"), href: "/shop?c=boys" },
+        { label: nav("girls"), href: "/shop?c=girls" },
+        { label: nav("baby"), href: "/shop?c=baby" },
+      ],
+    },
+    {
+      title: t("help"),
+      items: [
+        { label: t("sizeGuide"), href: "/size-guide" },
+        { label: t("shipping"), href: "/shipping" },
+        { label: t("faq"), href: "/faq" },
+        // TODO: link to the BeYours WhatsApp number once it's confirmed.
+        { label: t("whatsapp") },
+      ],
+    },
+    { title: t("payWith"), items: [{ label: t("cod") }, { label: t("cards") }, { label: t("wallets") }] },
   ];
   return (
     <footer className="bg-ink text-paper">
@@ -19,9 +38,13 @@ export function Footer() {
         {cols.map((c) => (
           <div key={c.title} className="flex flex-col gap-2.5">
             <h3 className="font-display text-lg font-semibold text-brand-yellow">{c.title}</h3>
-            {c.items.map((i) => (
-              <span key={i} className="text-sm">{i}</span>
-            ))}
+            {c.items.map((i) =>
+              i.href ? (
+                <Link key={i.label} href={i.href} className="text-sm hover:underline">{i.label}</Link>
+              ) : (
+                <span key={i.label} className="text-sm">{i.label}</span>
+              ),
+            )}
           </div>
         ))}
       </div>
